@@ -1,52 +1,95 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-Hant">
 <head>
-  <title>Loponok</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial;
-      background: #0f172a;
-      color: white;
-      text-align: center;
-    }
-
-    .container {
-      margin-top: 100px;
-    }
-
-    h1 {
-      font-size: 48px;
-    }
-
-    p {
-      color: #94a3b8;
-      font-size: 18px;
-    }
-
-    .btn {
-      margin-top: 20px;
-      display: inline-block;
-      padding: 10px 20px;
-      background: #3b82f6;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-    }
-
-    .btn:hover {
-      background: #2563eb;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LOPO NOK</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-  <div class="container">
-    <h1>I'm lopo</h1>
-    <p>Computer Science Student 🚀</p>
-    <p>Building...</p>
+  <canvas id="starfield"></canvas>
 
-    <a class="btn" href="#">View My Projects</a>
-  </div>
+  <nav>
+    <div class="menu">
+      <button data-target="home">主頁</button>
+      <button data-target="projects">作品</button>
+      <button data-target="skills">技能</button>
+      <button data-target="experience">經驗</button>
+    </div>
+  </nav>
+
+  <main>
+
+    <!--主頁awa-->
+    <section id="home" class="panel hero">
+      <div class="content hero-content">
+        <p class="code-line">printf("歡迎");</p>
+        <h1>LOPO NOK</h1>
+
+        <p class="typing-line">
+          <span id="typing-text"></span><span class="cursor">|</span>
+        </p>
+
+        <!--按鈕-->
+<div class="social-buttons">
+
+  <a href="https://github.com/loponok" 
+     class="btn github"
+     target="_blank" 
+     rel="noopener noreferrer">
+     <i class="fa-brands fa-github"></i>
+     GitHub
+  </a>
+
+  <a href="https://www.linkedin.com/in/lopo-nok-1a142b376/" 
+     class="btn linkedin"
+     target="_blank" 
+     rel="noopener noreferrer">
+     <i class="fa-brands fa-linkedin"></i>
+     LinkedIn
+  </a>
+
+  <a href="https://tryhackme.com/p/hugocskphc" 
+     class="btn tryhackme"
+     target="_blank" 
+     rel="noopener noreferrer">
+     <i class="fa-solid fa-user-secret"></i>
+     TryHackMe
+  </a>
+
+    </div>
+
+    </section>
+
+    <section id="projects" class="panel">
+      <div class="content">
+        <h2>作品</h2>
+        <p>等陣搞/之後弄</p>
+      </div>
+    </section>
+
+    <section id="skills" class="panel">
+      <div class="content">
+        <h2>技能</h2>
+        <p>等陣搞/之後弄</p>
+      </div>
+    </section>
+
+    <section id="experience" class="panel">
+      <div class="content">
+        <h2>經驗</h2>
+        <p>專題、比賽、實驗 (等陣搞/之後弄)
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    © 2026 loponok | All rights reserved.
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
